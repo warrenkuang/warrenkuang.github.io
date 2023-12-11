@@ -3,39 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Warren Kuang - Mechanical Engineering Portfolio</title>
+    <title>Warren Kuang - Design Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <!-- Additional styles or scripts go here -->
+    <style>
+        body { padding-top: 1in; }
+        .hero-image { text-align: center; }
+        .hero-image img { max-width: 100%; height: auto; }
+        footer { text-align: center; margin-top: 2em; }
+        .navigation { position: absolute; width: 100%; top: 0; }
+    </style>
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav class="navigation">
+    <nav class="container-fluid navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>            
-            <li><a href="mailto:warrenkuang@berkeley.edu">Contact</a></li>
+            <li><strong>Warren Kuang - Design Portfolio</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="mailto:warrenkuang@berkeley.edu" role="button">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero section or other content for the main page goes here -->
-    <div class="hero">
-        <!-- Your main page content and background image -->
-        <img src="Warren_Kuang.jpg" alt="Main Page Background" style="width:100%;">
-        <div class="hero-text">
-            <h1>Warren Kuang</h1>
-            <p>Mechanical Engineering Portfolio</p>
-        </div>
-    </div>
-
-    <!-- Additional content sections go here -->
-    <!-- ... -->
-
-
+    <!-- Main content section -->
+    <main class="container" id="about">
+        <section class="hero-image">
+            <figure>
+                <img src="Warren_Kuang.jpg" alt="Warren Kuang" />
+            </figure>
+        </section>
+        <section>
+            <h2>About Me</h2>
+            <p>I'm Warren Kuang, a Mechanical Engineering student at UC Berkeley. My childhood fascination with Legos and Rubik's Cubes has matured into a dedicated pursuit of engineering principles, where the magic of creation unfolds from the drawing board to the real world.</p>
+            <p>My passion isn't just about building; it's about the journey from inception to completion, the meticulous crafting and understanding of every gear and circuit. This journey has steered my ambitions toward Mechanical Engineering, a field where every calculation and design breathes life into the inanimate.</p>
+            <p>Looking toward the future, I am driven by a desire to innovate within the realms of biotech, renewable energy, the automotive industry, or the expansive skies of aerospace. My goal is to contribute to technologies that not only advance our society but also care for our planet.</p>
+            <p>With a focus on manufacturing and design, I am actively seeking internship opportunities for summer and fall 2024, where I can apply my passion and skills to real-world challenges. Feel free to reach out or take a look at my resume. Thank you!</p>
+            <h3>Connect</h3>
+            <p><a href="www.linkedin.com/in/warrenkuang" target="_blank">LinkedIn</a> • <a href="https://drive.google.com/file/d/1er-H8gsMEiSAJJN3ltiabdzpQ1T2IhdN/view?usp=sharing" target="_blank">Resume</a></p>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <!-- Footer content such as copyright notice, additional links, etc. -->
+    <footer class="container">
+        <!-- Intentionally left blank to remove duplicate links -->
     </footer>
 </body>
 </html>
